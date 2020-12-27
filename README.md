@@ -1,5 +1,6 @@
 # CTN-SiHE
 a set of scripts for automatic authentication to DHU internet. Ubuntu/selenium/firefox
+
 针对东华大学有线校园网下Ubuntu+火狐浏览器开发（无线网还没测试过），脚本能够在检测到无法连接到外网的时候自动打开浏览器进行认证。
 
 使用说明：
