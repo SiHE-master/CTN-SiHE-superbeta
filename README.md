@@ -33,3 +33,4 @@ ps -ef | grep firefox | grep -v grep | awk '{print $2}' | xargs kill -9
 
 2021/7.23更新：
 由于近期校园网频繁发生断开内网的情况，脚本更新了内网断开时自动重启网络的命令。
+请在开头输入sudo的密码。
