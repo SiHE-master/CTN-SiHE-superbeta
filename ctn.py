@@ -3,6 +3,7 @@ import time
 
 from selenium import webdriver
 
+sudo = ''
 usrname = ""
 psword = ""
 # 记录程序运行时间
@@ -42,7 +43,7 @@ while True:
             f2 = open('./ctn.log', 'a')
             print(time.strftime('%Y.%m.%d %H:%M:%S', time.localtime(time.time())), file=f2, flush=True)
             print('failed to ping network gate', file=f2, flush=True)  # failed to ping network gate
-            os.system('echo %s | sudo -S %s' % ('622', 'sudo service network-manager restart'))  # restart network
+            os.system('echo %s | sudo -S %s' % (sudo, 'sudo service network-manager restart'))  # restart network
             time.sleep(10)
             p3 = subprocess.Popen([r'./pinggate.sh', net_gate], close_fds=True, stdout=subprocess.PIPE)
             result3 = p3.stdout.read()
