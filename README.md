@@ -37,4 +37,4 @@ ps -ef | grep firefox | grep -v grep | awk '{print $2}' | xargs kill -9
 
 2021/11.14更新：
 由于nohup经常掉，采用注册service的方法后台挂起程序，参考https://www.jianshu.com/p/b75d88e5aa61 以及service.txt的内容。
-稳定状况：自11.21以来，11.30脚本依旧没有挂掉。
+稳定状况：自11.21以来，到11.30脚本依旧没有挂掉。
