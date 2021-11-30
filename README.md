@@ -33,4 +33,8 @@ ps -ef | grep firefox | grep -v grep | awk '{print $2}' | xargs kill -9
 
 2021/7.23更新：
 由于近期校园网频繁发生断开内网的情况，脚本更新了内网断开时自动重启网络的命令。
-请在开头输入sudo的密码。
+请在ctn.py开头输入sudo的密码。
+
+2021/11.14更新：
+由于nohup经常掉，采用注册service的方法后台挂起程序，参考https://www.jianshu.com/p/b75d88e5aa61以及service.txt的内容。
+稳定状况：自11.21以来，11.30脚本依旧没有挂掉。
