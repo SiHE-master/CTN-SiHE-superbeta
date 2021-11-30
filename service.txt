@@ -11,9 +11,9 @@ After=basic.service
 
 KillMode=control-group
 
-WorkingDirectory=/home/zp/Documents/CTN-SiHE
+WorkingDirectory=/home/zp/Documents/CTN-SiHE  # your project path
 
-ExecStart=/home/zp/anaconda3/bin/python3.7 /home/zp/Documents/CTN-SiHE/ctn.py
+ExecStart=/home/zp/anaconda3/bin/python3.7 /home/zp/Documents/CTN-SiHE/ctn.py  # your python path and project path
 
 Restart=always
 
